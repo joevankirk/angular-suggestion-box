@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>{{ post.title }}</h1>
+  <ul>
+    <li ng-repeat="comment in post.comments | orderBy:'-upvotes'">
+      <p>{{ comment.body }}</p>
+      <p>
+        <span class="btn btn-success glyphicon glyphicon-plus" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}}
+      </p>
+    </li>
+  </ul>
+</div>
