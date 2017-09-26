@@ -7,7 +7,9 @@
 css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body ng-app="SuggestionBox" ng-controller="HomeController">
-  <h1> {{ helloWorld }} </h1>
+  <div class="container" ng-repeat="post in posts">
+    <h1>{{ post.title }}</h1>
+  </div>
 
   <!-- Modules -->
   <script type="text/javascript" src="js/app.js"></script>
@@ -16,6 +18,7 @@ css/bootstrap.min.css" rel="stylesheet">
   <script type="text/javascript" src="js/controllers/HomeController.js"></script>
 
   <!-- Services -->
+  <script type="text/javascript" src="js/services/suggestions.js"></script>
 
 </body>
 </html>

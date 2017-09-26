@@ -17,7 +17,7 @@ app.factory('suggestions', [function(){
       comments: [],
     },
     {
-      title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings,
+      title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
       upvotes: 3,
       comments: [],
     },
